@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTasks } from '../context/TaskContext';
 import { FaTrash } from 'react-icons/fa';
 
-const TaskModal = ({ task, onClose }) => {
+export const TaskModal = ({ task, onClose }) => {
   const { updateTask, deleteTask } = useTasks();
   const [formData, setFormData] = useState({
     title: task.title,
@@ -45,27 +45,6 @@ const TaskModal = ({ task, onClose }) => {
       deleteTask(task.id);
       onClose();
     }
-  };
-
-  const getPriorityColor = (priority) => {
-    switch (priority) {
-      case 'high': return 'bg-red-500';
-      case 'medium': return 'bg-amber-500';
-      case 'low': return 'bg-emerald-500';
-      default: return 'bg-slate-400';
-    }
-  };
-
-  const getTagColor = (index) => {
-    const colors = [
-      'bg-amber-50 text-amber-700',
-      'bg-blue-50 text-blue-700',
-      'bg-emerald-50 text-emerald-700',
-      'bg-purple-50 text-purple-700',
-      'bg-pink-50 text-pink-700',
-      'bg-orange-50 text-orange-700',
-    ];
-    return colors[index % colors.length];
   };
 
   return (
@@ -191,7 +170,7 @@ const TaskModal = ({ task, onClose }) => {
         </div>
       </div>
     </div>
-  ); 
+  );
 };
 
 export default TaskModal;

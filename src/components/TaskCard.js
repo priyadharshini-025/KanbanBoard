@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { useTasks } from '../context/TaskContext';
-import TaskModal from './TaskModal';
+import { TaskModal } from './TaskModal';
 import { FaEdit, FaTrash } from 'react-icons/fa';
 
 const TaskCard = ({ task }) => {
