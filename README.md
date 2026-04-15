@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Kanban Board
+A modern Kanban-style task management application built with React JS that allows users to create, organize, and move tasks between columns like "To Do", "In Progress", and "Done".
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
 
-## Available Scripts
+- **Task Board Layout**: Display multiple task columns with visual task cards
+- **Responsive Design**: Built with TailwindCSS for mobile and desktop compatibility
+- **Add/Edit/Delete Tasks**: Full CRUD operations for task management
+- **Drag and Drop**: Smooth drag-and-drop functionality using @dnd-kit
+- **Task Details Modal**: Click on tasks to view full details and edit inline
+- **Local Persistence**: Tasks are saved to localStorage and persist across sessions
+- **Priority & Tags**: Optional priority levels and tag system for better organization
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start`
+- **React JS** - Frontend framework
+- **TailwindCSS** - Utility-first CSS framework
+- **@dnd-kit** - Modern drag and drop library
+- **React Icons** - Icon library
+- **Context API** - State management
+- **localStorage** - Data persistence
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Add Tasks**: Click the "Add New Task" button to create a new task
+2. **Edit Tasks**: Click on any task card or use the edit button to modify tasks
+3. **Delete Tasks**: Use the delete button on task cards (with confirmation)
+4. **Drag & Drop**: Drag tasks between columns to change their status
+5. **View Details**: Click on a task to open the detailed modal view
